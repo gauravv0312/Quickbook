@@ -1,0 +1,30 @@
+{
+    "API_Route":"https://sandbox-quickbooks.api.intuit.com/v3/company/${COMPANY_ID}/invoice?minorversion=62&include=invoiceLink",
+    "BODY":{
+        "Line": [
+          {
+            "Amount": 5000.00,
+            "DetailType": "SalesItemLineDetail",
+            "SalesItemLineDetail": {
+              "ItemRef": {
+                "value": "1",
+                "name": "Services"
+              }
+            }
+          }
+        ],
+        "CustomerRef": {
+          "value": "58"
+        },
+      "AllowIPNPayment": true,
+      "AllowOnlinePayment": true,
+      "AllowOnlineCreditCardPayment": true,
+      "AllowOnlineACHPayment": true,
+         "BillEmail": {
+            "Address": "gaurav@zibtek.in"
+          }
+      },
+    "LINK_GENERATED":"https://developer.intuit.com/comingSoonview/scs-v1-4be9114d6bfc49ac86f9317c3eebb8c6dc5bd66f1bdc4b5995f3385d8d7b3e6d57d2067167ce44fc9e6f2e3cce31b026?locale=en_US&amp;cta=v3invoicelink",
+    "DESCRIPTION":"using this you get the invoice link and the generated link you have trim."
+}
+
